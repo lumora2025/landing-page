@@ -1,45 +1,25 @@
-# aspsri.kr — GitHub Pages landing
+# aspsri.kr — GitHub Pages landing (with diagram)
 
-Multi-file static site ready for GitHub Pages.
+Multi-file static site ready for GitHub Pages, including the concept diagram.
 
 ## Structure
 ```
-aspsri-landing/
+aspsri-landing-with-diagram/
 ├─ index.html
 ├─ assets/
 │  ├─ css/style.css
-│  └─ js/main.js
+│  ├─ js/main.js
+│  └─ img/sig-flow.png
 ├─ CNAME
 └─ README.md
 ```
 
 ## Deploy
-1. Create a **public** repo (e.g., `aspsri-landing`) and upload all files.
+1. Create a **public** repo and upload all files (keep **CNAME** as `aspsri.kr`).
 2. GitHub **Settings → Pages**:
    - Source: **Deploy from a branch**
    - Branch: `main` / `(root)` → **Save**
 3. In **Custom domain**, set **aspsri.kr** and **Save**.
 4. In your DNS, set A (and optional AAAA) records to GitHub Pages IPs. When it’s active, enable **Enforce HTTPS**.
-
-## DNS (root `aspsri.kr`)
-A:
-```
-185.199.108.153
-185.199.109.153
-185.199.110.153
-185.199.111.153
-```
-AAAA (optional):
-```
-2606:50c0:8000::153
-2606:50c0:8001::153
-2606:50c0:8002::153
-2606:50c0:8003::153
-```
-
-## Optional `www`
-```
-www  CNAME  <your-github-username>.github.io
-```
 
 © 2025 Lumora
